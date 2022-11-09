@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-  --padding-value: 1.2vw;
+  --padding-value: 1.3vw;
   --accent-color-1: rgb(25, 146, 212);
   --accent-color-2: rgb(255, 255, 255);
 }
@@ -140,5 +140,66 @@ button {
 #content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  gap: 4vw;
+  padding: var(--padding-value);
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+#content h2 {
+  padding-bottom: 12px;
+}
+
+.card {
+  display: grid;
+  padding: 28px;
+  border-left: solid 8px rgb(240, 180, 41);
+  border-radius: 4px;
   background-color: var(--accent-color-2);
+}
+
+.icons {
+  padding-top: 48px;
+  justify-self: end;
+}
+
+#right-content {
+  width: 350px;
+}
+
+#announcments-card {
+  display: grid;
+  gap: 12px;
+  padding: 28px;
+  border-radius: 4px;
+  background-color: var(--accent-color-2);
+}
+
+#trending {
+  padding-top: 48px;
+}
+
+#users {
+  display: grid;
+  gap: 12px;
+  padding: 21px;
+  border-radius: 4px;
+  background-color: var(--accent-color-2);
+}
+
+.user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.user img {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
 }
